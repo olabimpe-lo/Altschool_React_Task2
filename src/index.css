@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.component {
+  margin:1rem;
+  text-align: center;
+}
+
+.nav {
+  background-color:black;
+  color:burlywood;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap:2rem;
+  padding:0 1rem;
+}
+
+.company-site{
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.nav ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display:flex;
+  gap:2rem;
+}
+
+.nav a {
+  color:aqua;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav li.nav_features {
+  background-color: gray;
+}
+
+.nav li:hover {
+  background-color: grey;
+}
+
+.listofEmployee{
+  color:goldenrod;
+  display: flex;
+  justify-content: space
+}
+
+.newEmployeeData{
+  color:goldenrod;
+  display: flex;
+  justify-content: space
+}

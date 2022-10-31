@@ -16,12 +16,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/employee" element={<Datafetching />} />
           <Route path="/about" element={<About />} />
-           <Route path="/404" element={<Error />} />
+          <Route path="/404" element={<ErrorPage />} />
         </Routes>
       </div>
 
-      <ErrorPage/>
-      <Home/>
+      <ErrorPage />
+      <Home />
     </>
   );
 }

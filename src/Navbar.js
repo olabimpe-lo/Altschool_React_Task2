@@ -1,8 +1,8 @@
 import React from "react";
-
-//this substitutes for the a in the <a href> tag
-//useMatch helps to covert the current path t the path we are going
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+//"link" substitutes for the a in the <a href> tag
+//useMatch helps to covert the current path t the path we are going
+import pagination from "./components/Pagination";
 
 const path = window.location.pathname;
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
       </Link>
       <ul>
         <li className="nav_features">
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/employee">Employee Record</Link>

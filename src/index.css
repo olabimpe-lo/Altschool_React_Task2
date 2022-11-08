@@ -51,7 +51,7 @@ body {
   background-color: grey;
 }
 
-.client{
+.listofEmployee{
   color:goldenrod;
   display: flex;
   justify-content: space
@@ -61,10 +61,4 @@ body {
   color:goldenrod;
   display: flex;
   justify-content: space
-}
-
-img {
-  width: 100%;
-  height: auto;
-  background-size: contain;
 }

@@ -1,25 +1,49 @@
 import React from "react";
 
-function Pagination({ dataPerPage, totalData, paginate}) {
-  const pageNumbers = [];
+function Pagination({
+  totalPages,
+  handleClick,
 
-  for (let i = 1; i <= Math.ceil(totalData / dataPerPage); i++) {
-    pageNumbers.push(i);
-  }
+  page,
+  setPage,
+
+
+}) {
+  const pages = [...Array(totalPages).keys()].map((num) => num + 1);
+  // Previous button click...
+  const previousPage = (event) => {
+    event.preventDefault();
+    setPage(page - 1);
+  };
+
+  // Next button click...
+  const nextPage = (event) => {
+    event.preventDefault();
+    setPage(page + 1);
+  };
 
   return (
-    <nav>
-      <ul className="pagination">
-        {pageNumbers.map((number) => (
-          <li key={number} className="page-item">
-            <a onClick={()=> paginate(number)} href='!#' className="page-link">
-              {number}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <div style={{ width: 'fit-content', margin: 'auto' }}>
+      <button className="buttons"
+        onClick={(event) => {
+          previousPage(event);
+        }}
+        disabled={page === 1}
+      >
+        Prev
+      </button>
+
+      {pages.map((num) => (
+        <button className="btn-page" style={{ cursor: 'pointer' }} key={num} onClick={() => handleClick(num)}>
+          {num}
+        </button>
+      ))}
+
+      <button className="buttons" onClick={(event) => nextPage(event)} disabled={page === 10}>
+        Next
+      </button>
+    </div>
   );
 }
-export default Pagination;
 
+export default Pagination;

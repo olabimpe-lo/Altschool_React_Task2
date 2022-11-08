@@ -1,7 +1,7 @@
-import Datafetching from "../Pages/Datafetching";
+import Datafetching from "../user/Datafetching";
 export default function clientRecord() {
   return (
-    <div className="cient">
+    <div className="Employee">
       <Datafetching />
     </div>
   );

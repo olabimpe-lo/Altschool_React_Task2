@@ -35,30 +35,50 @@ body {
 }
 
 .nav a {
-  color:aqua;
+  color:gray;
   text-decoration: none;
   height: 100%;
   display: flex;
   align-items: center;
   padding: 1rem;
+  font-size: 20px;
 }
 
-.nav li.nav_features {
+.company-site{
+  font-size: 40px;
+}
+/* .nav li.nav_features {
   background-color: gray;
+ 
+} */
+
+.homebtn{
+  align-items: center;
+}
+
+.homepage{
+font-size: 20px;
 }
 
 .nav li:hover {
-  background-color: grey;
+  background-color: rgb(193, 166, 98);
 }
 
-.listofEmployee{
+.client{
   color:goldenrod;
   display: flex;
-  justify-content: space
 }
 
-.newEmployeeData{
+.card{
   color:goldenrod;
   display: flex;
-  justify-content: space
+  justify-content: space;
+  align-items: center;
+  
+}
+
+img {
+  width: 100%;
+  height: auto;
+  background-size: contain;
 }

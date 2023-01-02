@@ -5,7 +5,7 @@ import About from "./components/About";
 import ErrorPage from "./components/ErrorPage";
 //the two components allows us define all our route and group them together
 import { Route, Routes } from "react-router-dom";
-import Datafetching from "./user/Datafetching";
+import Datafetching from "./Pages/Datafetching";
 function App() {
   return (
     <>
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/clientdata" element={<Datafetching />} />
           <Route path="/about" element={<About />} />
-          <Route path="/404" element={<ErrorPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>
     </>

@@ -1,4 +1,4 @@
-import Datafetching from "../user/Datafetching";
+import Datafetching from "../Pages/Datafetching";
 export default function clientRecord() {
   return (
     <div className="Employee">
